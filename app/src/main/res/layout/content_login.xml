@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".User.LoginActivity"
+    tools:showIn="@layout/app_bar_login"
+    android:background="@color/colorBackground">
+
+
+        <TextView
+            android:id="@+id/applicantLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/applicantLogin"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="@string/loginEmail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@id/applicantLogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textAutoCorrect|textPassword"
+            android:layout_below="@id/loginEmail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/loginBtn"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/loginPassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <CheckBox
+            android:id="@+id/rmbPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rmbPassword"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/newUser"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="@string/newUser"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:layout_marginRight="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_below="@id/rmbPass"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/grey"
+            android:text="@string/forgotPassword"
+            android:layout_below="@id/rmbPass"
+            android:layout_toRightOf="@id/newUser"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Job.ViewJobActivity"
+    tools:showIn="@layout/app_bar_view_job">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/viewJobDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="Job"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEmpName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewJobDetails"
+                    android:layout_marginTop="50dp"
+                    android:text="Employer Name:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewEmpName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewJobDetails"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/tvEmpName"
+                    android:layout_toRightOf="@+id/tvEmpName"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvCompanyName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEmpName"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tvCompanyName"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEmpName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/tvCompanyName"
+                    android:layout_toRightOf="@+id/tvCompanyName"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCompanyName"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tvTitle"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCompanyName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/tvTitle"
+                    android:layout_toRightOf="@+id/tvTitle"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvSalary"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tvSalary"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/tvSalary"
+                    android:layout_toRightOf="@+id/tvSalary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSalary"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tvStatus"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewJobStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSalary"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/tvStatus"
+                    android:layout_toRightOf="@+id/tvStatus"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvStatus"
+                    android:layout_marginTop="30dp"
+                    android:text="Do this job allow student to work?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvStudent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewStudent"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/tvLocation"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvLatitude"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tvLatitude"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvLongitude"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLatitude"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tvLongitude"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/tvLatitude"
+                    android:layout_toRightOf="@+id/tvLatitude"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLatitude"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_toEndOf="@+id/tvLongitude"
+                    android:layout_toRightOf="@+id/tvLongitude"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvJobDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLongitude"
+                    android:layout_marginTop="30dp"
+                    android:text="Do this job allow student to work?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewJobDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobDescription"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvJobRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewJobDescription"
+                    android:layout_marginTop="30dp"
+                    android:text="Do this job allow student to work?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/viewJobRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobRequirements"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewJobDescription"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Edit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

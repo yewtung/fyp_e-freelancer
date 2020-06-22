@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".User.SignUpActivity"
+    tools:showIn="@layout/app_bar_sign_up">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/applicantSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/applicantSignIn"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/signUpProfilePicture"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/applicantSignIn"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tvRequiredField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/requiredFiled"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/signUpProfilePicture"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvRequiredField"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="User Name: * "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvUserName"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email: *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvEmailPattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etApplicantEmail"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:text="Please fill in email in this pattern (xxxx@email.com)"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvEmailPattern"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Age: *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvAge"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Phone Number: *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPreferSalary"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/tvPhonePattern"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Prefer Salary : * \n(per hour)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvPreferSalary"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Password: *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvConfirmPassword"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/tvPassword"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Confirm Password: *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etApplicantUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvRequiredField"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tvUserName"
+                    android:ems="10"
+                    android:hint="@string/etUserName"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etApplicantEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/etApplicantUserName"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@id/tvEmail"
+                    android:ems="10"
+                    android:hint="@string/etEmail"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/etApplicantAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tvEmailPattern"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@id/tvAge"
+                    android:ems="10"
+                    android:hint="@string/etAge"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/etApplicantPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/etApplicantAge"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@id/tvPhone"
+                    android:ems="10"
+                    android:hint="@string/etPhone"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/tvPhonePattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etApplicantPhone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:text="Please fill in phone number in this pattern (123-1234567)"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <EditText
+                    android:id="@+id/etApplicantPreferSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/tvPhonePattern"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tvPhone"
+                    android:ems="10"
+                    android:hint="Prefer salary"
+                    android:inputType="number|numberDecimal" />
+
+
+                <EditText
+                    android:id="@+id/etApplicantPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/etApplicantPreferSalary"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@id/tvPassword"
+                    android:ems="10"
+                    android:hint="@string/etPassword"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/etApplicantConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@id/etApplicantPassword"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@id/tvConfirmPassword"
+                    android:ems="10"
+                    android:hint="@string/etConfirmPassword"
+                    android:inputType="textPassword" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@id/etApplicantConfirmPassword"/>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvConfirmPassword"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Living Location "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvLatitude"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Latitude: *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvLongitude"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvLatitude"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Longitude: *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:ems="10"
+                    android:hint="@string/etLatitude"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_toRightOf="@id/tvLatitude"/>
+
+                <EditText
+                    android:id="@+id/etLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvLatitude"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toEndOf="@+id/tvLongitude"
+                    android:layout_toRightOf="@+id/tvLongitude"
+                    android:ems="10"
+                    android:hint="@string/etLongitude"
+                    android:inputType="numberDecimal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@id/etLongitude"/>
+
+                <TextView
+                    android:id="@+id/tvStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tvStudent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_below="@id/tvLongitude"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rbStu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/tvStudent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbYes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/rbYes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/rbNo" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/submitBtn"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_below="@id/rbStu"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvLoginLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Already has an account? Login."
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    android:layout_below="@id/btnSignIn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EmployerDashboard.DisplayEmployerDashboardUserDetailsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/displayApplyRequestingUserDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:text="User Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/displayApplyRequestingUserDetails"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="ID :"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvRequestingID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/displayApplyRequestingUserDetails"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/tvID"
+                    android:layout_toRightOf="@+id/tvID"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvJobID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvID"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Job ID :"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvRequestingJobID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvID"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvJobID"
+                    android:layout_toRightOf="@+id/tvJobID"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvJobTitle"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobID"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Job Title :"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvRequestingJobTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobID"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvJobTitle"
+                    android:layout_toRightOf="@+id/tvJobTitle"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvUserID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobTitle"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="User ID: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvRequestingUserID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobTitle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvUserID"
+                    android:layout_toRightOf="@+id/tvUserID"
+                    android:padding="5dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserID"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="@string/tvUserName"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvRequestingUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserID"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvUsername"
+                    android:layout_toRightOf="@+id/tvUsername"
+                    android:padding="5dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Apply Date: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tvUsername"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvRequestingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tvUsername"
+                    android:layout_toRightOf="@+id/tvDate"
+                    android:layout_toEndOf="@+id/tvDate"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnViewProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="View User Profile"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_below="@id/tvRequestingDate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/btnHire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnViewProfile"
+                    android:background="@color/colorPrimary"
+                    android:text="Hire"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnViewProfile"
+                    android:background="@color/colorPrimary"
+                    android:text="Pay"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/btnReject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Reject"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_below="@id/btnHire"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

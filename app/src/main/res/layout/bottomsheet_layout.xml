@@ -1,0 +1,57 @@
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:background="@android:color/white"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        app:behavior_peekHeight="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tap_action_layout"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text=""
+                    android:textOn=""
+                    android:textOff=""
+                    android:background="@drawable/tb_up_down"
+                    android:checked="true"/>
+
+                <TextView
+                    android:id="@+id/tvBottomsheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Result"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

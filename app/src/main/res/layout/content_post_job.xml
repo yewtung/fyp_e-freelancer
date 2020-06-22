@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Job.PostJobActivity"
+    tools:showIn="@layout/app_bar_post_job">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Post Job"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRequiredField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/requiredFiled"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/textView14"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvEmpName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/tvName"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvRequiredField"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp" />
+
+                <TextView
+                    android:id="@+id/tvCompanyName"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Company Name :*"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvEmpName"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp" />
+
+                <TextView
+                    android:id="@+id/tvCompanyNameExtra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/companyNameExtra"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tvCompanyName"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Job Title : * "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvCompanyNameExtra"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toLeftOf="@+id/etJobTitle"/>
+
+                <TextView
+                    android:id="@+id/tvSalary"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:text="Salary (per day) : * "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_below="@+id/etTitle"
+                    android:layout_toLeftOf="@+id/etSalary"
+                    android:layout_toStartOf="@+id/etSalary" />
+
+                <TextView
+                    android:id="@+id/etEmpName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvRequiredField"
+                    android:layout_toEndOf="@+id/tvEmpName"
+                    android:layout_toRightOf="@+id/tvEmpName"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/etCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/etEmpName"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvCompanyName"
+                    android:layout_toRightOf="@+id/tvCompanyName"
+                    android:ems="3"
+                    android:hint="@string/etCompanyName"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/etTitle"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/tvCompanyNameExtra"
+                    android:layout_toEndOf="@+id/tvTitle"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@+id/tvTitle" />
+                <EditText
+                    android:id="@+id/etSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/etSalary"
+                    android:inputType="number"
+                    android:layout_below="@+id/etTitle"
+                    android:layout_toEndOf="@+id/tvTitle"
+                    android:layout_marginEnd="25dp"
+                    android:layout_toRightOf="@+id/tvTitle"
+                    android:layout_marginRight="25dp" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvLocation"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/tvSalary"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginEnd="25dp"/>
+                <TextView
+                    android:id="@+id/tvLatitude"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Latitude : *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp" />
+
+                <TextView
+                    android:id="@+id/tvLongitude"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Longitude : *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/tvLatitude"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp" />
+                <EditText
+                    android:id="@+id/etLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/etLatitude"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_toEndOf="@+id/tvLatitude"
+                    android:layout_marginEnd="25dp"
+                    android:layout_toRightOf="@+id/tvLatitude"
+                    android:layout_marginRight="25dp" />
+                <EditText
+                    android:id="@+id/etLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/etLongitude"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/tvLatitude"
+                    android:layout_toEndOf="@+id/tvLongitude"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@+id/tvLongitude" />
+
+                <TextView
+                    android:id="@+id/tvStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Do this job allow student to work? *"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvLongitude"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rbJobStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tvStudent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp">
+                    <RadioButton
+                        android:id="@+id/cbYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:textColor="@color/black" />
+                    <RadioButton
+                        android:id="@+id/cbNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvJobDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/tvJobDescription"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/rbJobStudent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <EditText
+                    android:id="@+id/etJobDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/etJobDescription"
+                    android:inputType="textMultiLine"
+                    android:layout_below="@+id/tvJobDescription"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvJobRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:baselineAligned="false"
+                    android:text="@string/tvJobRequirements"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/etJobDescription"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+
+                <EditText
+                    android:id="@+id/etJobRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/etJobRequirements"
+                    android:inputType="textMultiLine"
+                    android:layout_below="@+id/tvJobRequirements"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <Button
+                    android:id="@+id/btnPublish"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="@string/btnPublish"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/etJobRequirements"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

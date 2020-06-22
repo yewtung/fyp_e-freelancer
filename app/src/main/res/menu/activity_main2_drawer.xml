@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:title="Login" android:id="@+id/nav_login"/>
+        <item android:title="Sign Up" android:id="@+id/nav_signUp"/>
+        <item android:title="Employer Dashboard" android:id="@+id/nav_employer_dashboard"/>
+        <item android:title="Map" android:id="@+id/nav_searchJob"/>
+        <item android:title="Post Job" android:id="@+id/nav_postJob"/>
+        <item android:title="Profile" android:id="@+id/nav_profile"/>
+        <item android:title="Chat" android:id="@+id/nav_chat"/>
+        <item android:title="Sign Out" android:id="@+id/nav_signOut"/>
+    </group>
+
+    <item android:title="Switch User">
+        <menu>
+            <item
+                android:id="@+id/switch_user"
+                android:title="Applicant" />
+        </menu>
+     </item>
+
+</menu>
+

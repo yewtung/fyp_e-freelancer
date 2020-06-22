@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".User.ViewProfileActivity"
+    tools:showIn="@layout/app_bar_view_profile">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/viewProfileTitle"
+                    android:text="Profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/viewProfilePicture"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_below="@id/viewProfileTitle"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvUserName"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@id/viewProfilePicture"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="@string/tvEmail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@id/tvUserName"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvAge"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@id/viewProfileEmail"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvPhone"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@id/tvAge"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvPreferSalary"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Prefer Salary"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@id/tvPhone"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/viewProfileUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/viewProfilePicture"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tvUserName"
+                    android:layout_toEndOf="@id/tvUserName" />
+
+                <TextView
+                    android:id="@+id/viewProfileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tvEmail"
+                    android:layout_toEndOf="@id/tvEmail"
+                    android:layout_below="@+id/viewProfileUserName"/>
+
+                <TextView
+                    android:id="@+id/viewProfileAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tvAge"
+                    android:layout_toEndOf="@id/tvAge"
+                    android:layout_below="@+id/viewProfileEmail"/>
+
+                <TextView
+                    android:id="@+id/viewProfilePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tvPhone"
+                    android:layout_toEndOf="@id/tvPhone"
+                    android:layout_below="@+id/viewProfileAge"/>
+
+                <TextView
+                    android:id="@+id/viewProfilePreferSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tvPreferSalary"
+                    android:layout_toEndOf="@id/tvPreferSalary"
+                    android:layout_below="@+id/viewProfilePhone"/>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Living Location"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" 
+                    android:layout_below="@+id/tvPreferSalary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/viewProfileLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Negotiate"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/viewProfileLocation"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

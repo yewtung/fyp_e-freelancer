@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdminDashboard.DisplayAdminDashboardUserActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tl_AdminDashboard_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:id="@+id/title_activeApplicant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvID"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:text="@string/Uid"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvButton"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:textSize="18sp" />
+
+                    <!--<TextView
+                        android:id="@+id/tvEmailVerified"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:text="@string/emailVerified"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvLastSignInTime"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:text="@string/lastSignInTime"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvCreationTime"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:padding="5dp"
+                        android:text="@string/creationTime"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />-->
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/content_activeApplicant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TableRow>
+
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

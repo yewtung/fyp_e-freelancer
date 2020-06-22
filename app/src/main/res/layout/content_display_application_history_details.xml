@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/displayApplicationDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:text="Application Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvJobTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/displayApplicationDetails"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Job Title :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/tvApplicationJobTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/displayApplicationDetails"
+                    android:layout_toEndOf="@+id/tvJobTitle"
+                    android:layout_toRightOf="@+id/tvJobTitle"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/tvEmpName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobTitle"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Employer Name :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvApplicationEmpName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJobTitle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvEmpName"
+                    android:layout_toRightOf="@+id/tvEmpName"
+                    android:padding="5dp"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tvSalary"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEmpName"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Salary: "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvApplicationSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEmpName"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvEmpName"
+                    android:layout_toRightOf="@+id/tvEmpName"
+                    android:padding="5dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSalary"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Status: "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvApplicationStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSalary"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tvStatus"
+                    android:layout_toRightOf="@+id/tvStatus"
+                    android:padding="5dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Date: "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvStatus"
+                    android:layout_marginBottom="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvApplicationDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tvStatus"
+                    android:layout_toRightOf="@+id/tvDate"
+                    android:layout_toEndOf="@+id/tvDate"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Cancel Apply"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_below="@id/tvDate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="16sp"
+                    android:layout_marginTop="16sp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

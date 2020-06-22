@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">E-freelancer Job Centre</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    //login page
+    <string name="loginEmail">Email</string>
+    <string name="password">Password</string>
+    <string name="loginBtn">Log In</string>
+    <string name="applicantLogin">Log In</string>
+    <string name="empLogin">Employer Log In</string>
+    <string name="adminLogin">Admin Log In</string>
+    <string name="rmbPassword">Remember Password</string>
+    <string name="newUser">"New user? Register "</string>
+    <string name="forgotPassword">Forgot password?</string>
+
+    //sign in page
+    <string name="tvUserName">User Name: </string>
+    <string name="tvAge">Age: </string>
+    <string name="tvPhone">Phone Number:</string>
+    <string name="tvEmail">Email:</string>
+    <string name="tvPassword">Password:</string>
+    <string name="tvConfirmPassword">Confirm Password:</string>
+    <string name="tvStudent">Are you a student?</string>
+    <string name="tvStudent1">*Only applicant can choose yes</string>
+    <string name="rbYes">Yes</string>
+    <string name="rbNo">No</string>
+    <string name="etUserName">User Name</string>
+    <string name="etAge">Age</string>
+    <string name="etPhone">Phone Number</string>
+    <string name="etEmail">Email</string>
+    <string name="etPassword">Password</string>
+    <string name="etConfirmPassword">Confirm Password</string>
+    <string name="submitBtn">Create an account</string>
+    <string name="applicantSignIn">Sign Up</string>
+    <string name="empSignIn">Sign Up</string>
+    <string name="tvLogin">Already have an account? Login here</string>
+    <string name="tvRole">Role: </string>
+    <string name="rbApp">Applicant</string>
+    <string name="rbEmp">Employer</string>
+
+    //post job page
+    <string name="tvName">Your Name :</string>
+    <string name="tvCompanyName">Company Name :</string>
+    <string name="tvTitle">Job Title:</string>
+    <string name="tvSalary">Salary:</string>
+    <string name="tvLocation">Job Location</string>
+    <string name="tvLongitude">Longitude:</string>
+    <string name="tvLatitude">Latitude: </string>
+    <string name="tvJobDescription">Job Description:</string>
+    <string name="tvJobRequirements">Job Requirement:</string>
+    <string name="etName">Your Name </string>
+    <string name="etCompanyName">Company Name </string>
+    <string name="etTitle">Job Title</string>
+    <string name="etSalary">Salary</string>
+    <string name="etLocation">Location</string>
+    <string name="etLongitude">Longitude</string>
+    <string name="etLatitude">Latitude</string>
+    <string name="etJobDescription">Job Description</string>
+    <string name="etJobRequirements">Job Requirement</string>
+    <string name="cbHourly">Hourly</string>
+    <string name="cbMonthly">Monthly</string>
+    <string name="cbYearly">Yearly</string>
+    <string name="btnPublish">Publish</string>
+
+    //dashboard page
+    <string name="empDashboard">Employer Dashboard</string>
+    <string name="adminDashboard">Admin Dashboard</string>
+    <string name="noEmployee">Number of Employee</string>
+    <string name="noActivatedJob">Number of Activated Job</string>
+    <string name="noBlockedJob">Number of Blocked Job</string>
+    <string name="noActivatedApplicant">Number of Activated Applicant</string>
+    <string name="noInactiveApplicant">Number of Inactive Applicant</string>
+    <string name="noActivatedEmployer">Number of Activated Employer</string>
+    <string name="noInactiveEmployer">Number of Inactive Applicants</string>
+    <string name="noInactiveJob">Number of Applied Job</string>
+
+    <string name="btnEditJob">Edit</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="btnSave">Save</string>
+    <string name="profileTitle">My Profile</string>
+    <string name="tvSalaryType">Salary Type:</string>
+    <string name="tvStatus">Status:</string>
+
+    //profile page
+    <string name="tvExperience">Experience:</string>
+    <string name="tvEducation">Education:</string>
+    <string name="tvSkill">Skill:</string>
+    <string name="tvAccomplishment">Accomplishment:</string>
+    <string name="tvRecentWorkTitle">Recent Work Title:</string>
+    <string name="tvRecentCompany">Recent Company:</string>
+
+    <string name="editJobTitle">Edit Job</string>
+    <string name="editProfileTitle">Edit Profile</string>
+    <string name="none">None</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="Uid">User ID</string>
+    <string name="email">Email</string>
+    <string name="emailVerified">Email Status</string>
+    <string name="lastSignInTime">Last Sign In Time</string>
+    <string name="creationTime">Creation Time</string>
+
+    <string name="educationTitle">Education</string>
+    <string name="experienceTitle">Experience</string>
+    <string name="languagesTitle">Languages</string>
+    <string name="skillsTitle">Skills</string>
+
+    <string name="tvJobTitle">Job Title: </string>
+    <string name="etPositionTitle">Job Title</string>
+    <string name="tvDateJoined">Date Joined: </string>
+    <string name="etDateJoined">Date Joined</string>
+    <string name="tvDateLeft">Date Left: </string>
+    <string name="etDateLeft">Date Left</string>
+    <string name="tvCurrentlyWork">I currently work here.</string>
+    <string name="tvJobKeyResponsibilities">Job Key Responsibilities</string>
+    <string name="etJobKeyResponsibilities">Describe your job responsibilities, projects or achievement here.</string>
+
+    <string name="chat">Chat</string>
+    <string name="textView">textView</string>
+    <string name="displayActiveApplicantDetails">Display Active Applicant Details</string>
+    <string name="tvUserID">ID:</string>
+    <string name="google_maps_api">AIzaSyAaFRcSSJv5QpSDr4UzHoi18UhdYUkJEuM</string>
+
+    <string name="wage"> RM %1$d salary </string>
+    <string name="requiredFiled">Required fields are marked as *</string>
+    <string name="companyNameExtra">Please fill in (Self Employ)  if you do not have any company</string>
+
+    <string name="log_token">Log Token</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+
+    <string name="month_prompt">Month</string>
+    <string name="year_prompt">Year</string>
+
+    <string-array name="month_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="year_array">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+        <item>2036</item>
+        <item>2037</item>
+        <item>2038</item>
+        <item>2039</item>
+        <item>2040</item>
+    </string-array>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+
+</resources>
